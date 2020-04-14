@@ -9,7 +9,8 @@ https://gomakethings.com/how-to-turn-any-github-repo-into-a-cdn/
 
 Run the docker comand.  
 
-  docker run -P -d -v "$PWD:/home/coder/project" codercom/code-server. 
+  docker run -P -d -v "/home/coder/project:/home/coder/project" codercom/code-server
+
 
 To get the password, enter 
 
