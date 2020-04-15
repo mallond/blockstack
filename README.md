@@ -14,4 +14,10 @@ Run the docker comand.
 
 To get the password, enter 
 
-  docker logs <image>   
+  docker logs <image>  
+  
+# HTTPS Server
+```
+> openssl req -newkey rsa:2048 -new -nodes -x509 -days 3650 -keyout key.pem -out cert.pem
+> http-server --cors -S -C cert.pem
+```
